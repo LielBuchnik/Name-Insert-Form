@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User List</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <h1>Liel's User System</h1>
+    <div class="container">
+        <div class="field">
+            <input type="text" placeholder="First Name" id="pname" />
+            <input type="text" placeholder="Last Name" id="psurname" />
+        </div>
+        <div class="field">
+            <input type="text" placeholder="Age" id="page" />
+            <input type="text" placeholder="City" id="pcity" />
+        </div>
+        <div class="but-des">
+            <button class="btn-box" id="userSubmit" onclick="userSubmition(pname.value, psurname.value, page.value, pcity.value)">Submit
+                User</button>
+            <button class="btn-box2" id="userDisplay" onclick="usersDisplay()">Show Users</button>
+            <button class="btn-box3" id="userDisplay" onclick="clearLogger()">Clear Log</button>
+        </div>
+        <div class="list-display">
+            <div id="user-table">
+            </div>
+        </div>
+        <div id="progBar">
+        <div class="progressbarWrapper">
+            <span id="pinkBar"></span>
+        </div>
+    </div>
+    </div>
+    <script src="../js/index.js"></script>
+</body>
+
+</html>

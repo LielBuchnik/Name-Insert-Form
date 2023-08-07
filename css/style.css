@@ -1,0 +1,247 @@
+/* All Rights reserved to Liel Buchnik */
+/* 06 Aug 2023 */
+
+
+@import url('https://fonts.googleapis.com/css2?family=REM:wght@100;200;300;400;500;600;700&display=swap');
+
+*{
+    font-family: 'REM', sans-serif;
+    position: relative;
+    margin: 0;
+    text-align: center;
+}
+
+html{
+    min-height: 100%;
+}
+
+body{
+    background: linear-gradient(#64b0e6, #ca91e5);
+    background-attachment: fixed;
+    max-height: 100%;
+    max-width: 100%;
+}
+
+.container{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 70px;
+    background-color: rgba(255, 255, 255, 1);
+    height: 500px;
+    width: 500px;
+    border-end-end-radius: 25px;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    box-shadow: 0px 0px 20px 0px rgba(132, 132, 132, 0.5);
+}
+
+h1{
+    margin-top: 35px;
+    padding: 15px;
+    color: rgb(255, 255, 255);
+}
+
+.field {
+    padding: 1px;
+}
+
+input[id="pname"]{
+    margin-top: 50px;
+    background-color: rgba(184, 184, 184, 0.2);
+    width: 150px;
+    height: 38px;
+    border-top-left-radius: 15px;
+    border: none;
+    outline: none;
+    transition: 0.2s;
+    box-shadow: 0px 0px 5px 0px rgba(132, 132, 132, 0.5);
+}
+
+input[id="psurname"]{
+    background-color: rgba(184, 184, 184, 0.2);
+    width: 150px;
+    height: 38px;
+    border-top-right-radius: 15px;
+    border: none;
+    outline: none;
+    transition: 0.2s;
+    box-shadow: 0px 0px 5px 0px rgba(132, 132, 132, 0.5);
+}
+
+input[id="page"]{
+    background-color: rgba(184, 184, 184, 0.2);
+    width: 150px;
+    height: 38px;
+    border-bottom-left-radius: 15px;
+    border: none;
+    outline: none;
+    transition: 0.2s;
+    box-shadow: 0px 0px 5px 0px rgba(132, 132, 132, 0.5);
+}
+
+input[id="pcity"]{
+    background-color: rgba(184, 184, 184, 0.2);
+    width: 150px;
+    height: 38px;
+    border-end-end-radius: 15px;
+    border: none;
+    outline: none;
+    transition: 0.2s;
+    box-shadow: 0px 0px 5px 0px rgba(132, 132, 132, 0.5);
+}
+
+input[id="pname"]:hover{
+    scale: 1.05;
+    transition: 0.2s;
+}
+
+input[id="psurname"]:hover{
+    scale: 1.05;
+    transition: 0.2s;
+}
+
+input[id="page"]:hover{
+    scale: 1.05;
+    transition: 0.2s;
+}
+
+input[id="pcity"]:hover{
+    scale: 1.05;
+    transition: 0.2s;
+}
+
+
+#user-table{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25px;
+}
+
+#user-list{
+    text-align: center;
+}
+
+.user{
+    color: rgb(224, 123, 255);
+}
+
+.btn-box {
+    text-transform:uppercase;
+    cursor: pointer;
+    line-height: 1;
+    font-size: 11px;
+    width: 100px;
+    height: 40px;
+    border: 1px solid rgba(151, 151, 151, 0.3);
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    font-weight: 400;
+    background-color: transparent;
+    margin-top: 5px;
+    z-index: 1;
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+.btn-box2 {
+    text-transform:uppercase;
+    cursor: pointer;
+    line-height: 1;
+    font-size: 11px;
+    width: 100px;
+    height: 40px;
+    border: 1px solid rgba(151, 151, 151, 0.3);
+    font-weight: 400;
+    background-color: transparent;
+    margin-top: 15px;
+    z-index: 1;
+    overflow: hidden;
+    transition: 0.3s;
+    margin-bottom: 15px;
+}
+
+.btn-box3 {
+    text-transform:uppercase;
+    cursor: pointer;
+    line-height: 1;
+    color: white;
+    font-size: 11px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    width: 100px;
+    height: 40px;
+    border: 1px solid rgba(151, 151, 151, 0.3);
+    font-weight: 400;
+    background-color: rgba(255, 69, 69, 0.945);
+    margin-top: 15px;
+    z-index: 1;
+    overflow: hidden;
+    transition: 0.3s;
+    margin-bottom: 15px;
+}
+
+.btn-box:hover , .btn-box2:hover {
+    color: white;
+    scale: 1.05;
+    background-color: #e2a2ff;
+    box-shadow: 0px 0px 20px 0px rgba(255, 135, 247, 0.2);
+}
+
+.btn-box3:hover {
+    scale: 1.05;
+    box-shadow: 0px 0px 20px 0px rgba(255, 135, 247, 0.2);
+}
+
+.list-display{
+    margin-left: auto;
+    margin-right: auto;
+    width: 400px;
+    height: 250px;
+    background-color: rgb(224, 224, 224);
+    overflow-y: auto;
+}
+
+.btn-box ,.btn-box2 ,.btn-box3{
+    box-shadow: 0px 0px 5px 0px rgba(132, 132, 132, 0.5);
+}
+
+#user-table{
+    margin-top: 15px;
+}
+
+/* progBar */
+
+.progressbarWrapper {
+    height: 30px;
+    width: 200px;
+    max-width: 80%;
+    display: block;
+    margin: auto;
+    position: relative;
+    background: transparent;
+    padding: 3px;
+    box-shadow: transparent;
+  }
+
+  
+  #pinkBar {
+    height: 100%;
+    width: 0px;
+    margin-top: 5px;
+    border-radius: 30px;
+    overflow: hidden;
+    background-color: rgba(224, 123, 255, 0.7);
+    box-shadow: 0px 0px 20px 0px rgba(255, 135, 247, 0.4);
+    background-image: linear-gradient(
+      center bottom,
+      rgba(224, 123, 255, 0.7) 37%,
+      rgba(224, 123, 255, 0.7) 69%
+    );
+    position: relative;
+    overflow: hidden;
+    font-size: 15px;
+    text-align: center;
+    color: white;
+    transition: all 700ms ease;
+  }
